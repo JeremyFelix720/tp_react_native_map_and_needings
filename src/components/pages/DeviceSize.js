@@ -1,5 +1,4 @@
-import * as React from 'react';
-import { StyleSheet, Button, View, Text } from 'react-native';
+import { Text, View, StyleSheet, useWindowDimensions } from 'react-native';
 import {
   SafeAreaView,
   SafeAreaProvider,
@@ -7,13 +6,23 @@ import {
   useSafeAreaInsets,
 } from 'react-native-safe-area-context';
 
-export default function Home() {
+export default function DeviceSize() {
+  
+  const {height, width, scale, fontScale} = useWindowDimensions();
+
+  let deviceSizeText = JSON.stringify({height, width, scale, fontScale}); // c'est un objet qui contient les données de la dimention du téléphone.
 
   return (
 
     <SafeAreaView style={styles.container}>
 
-        <Text style={styles.h1}>Home</Text>
+        <Text style={styles.h1}>Device size</Text>
+
+        <View style={styles.container}>
+          
+          <Text style={styles.paragraph}>{deviceSizeText}</Text>
+
+        </View>
 
     </SafeAreaView>
 

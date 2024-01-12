@@ -11,7 +11,7 @@ Nous avons vu comment créer des composants, les utiliser, les styliser. Et au f
 - [ ] Utiliser un navigateur en bottomTabNavigator spécifique pour ios et un autre pour android.
 - [ ] Créer une media query pour afficher un composant spécifique à une taille d'écran.
 - [ ] Créer une page qui affiche une carte et un marqueur à un endroit précis.
-- [ ] Utiliser une SageAreaView pour ne pas aller dans des zones non visibles de l'écran.
+- [ ] Utiliser une SafeAreaView pour ne pas aller dans des zones non visibles de l'écran.
 
 ## Le TP
 

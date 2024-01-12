@@ -1,5 +1,6 @@
 import * as React from 'react';
-import { StyleSheet, Button, View, Text } from 'react-native';
+import { StyleSheet, View } from 'react-native';
+import MapView from 'react-native-maps';
 import {
   SafeAreaView,
   SafeAreaProvider,
@@ -7,13 +8,13 @@ import {
   useSafeAreaInsets,
 } from 'react-native-safe-area-context';
 
-export default function Home() {
+export default function Map() {
 
   return (
 
-    <SafeAreaView style={styles.container}>
+    <SafeAreaView>
 
-        <Text style={styles.h1}>Home</Text>
+      <MapView style={styles.map} />
 
     </SafeAreaView>
 
